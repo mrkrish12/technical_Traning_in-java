@@ -1,0 +1,22 @@
+
+// User function Template for Java
+
+// https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1?page=1&curated[]=1&sortBy=submissions
+class Solution {
+    int missingNumber(int arr[], int n) {
+        // Your Code Here
+    Arrays.sort(arr);
+    int i=0;
+     while(i<=arr.length-1){
+            int correct = arr[i]-1;
+            if(correct>i)
+            {
+                return correct;
+            }
+            else{
+                i++;
+            }
+        }
+        return n;
+    }
+}
