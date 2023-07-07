@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Solve {
     public int[] kWeakestRows(int[][] mat, int k) {
         int ans[] = new int[k];
@@ -11,7 +13,7 @@ public class Solve {
                 if (mat[i][j] == 1) {
                     nos++;
                 }
-            }
+            }D
             numofsol[i] = nos;
             output.add(nos);
         }
